@@ -1,0 +1,136 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1993299513,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoWebAppFunctionalTestSteps.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Concatenate two numbers in home apge and navigate to about page",
+        "description": "",
+        "id": "validate-the-web-site-pages;concatenate-two-numbers-in-home-apge-and-navigate-to-about-page",
+        "after": [
+          {
+            "result": {
+              "duration": 156146412,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DemoWebAppFunctionalTestSteps.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 770145142,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am using app url to navigate to the Test page",
+            "match": {
+              "location": "DemoWebAppFunctionalTestSteps.i_am_using_app_url_to_navigate_to_the_Test_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 79521495,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I have entered \"222\" into the first text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "222",
+                  "offset": 16
+                }
+              ],
+              "location": "DemoWebAppFunctionalTestSteps.i_have_entered_something_into_the_first_text_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77073639,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Then I have entered \"333\" into the second text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "333",
+                  "offset": 21
+                }
+              ],
+              "location": "DemoWebAppFunctionalTestSteps.then_i_have_entered_something_into_the_second_text_box(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119628991,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I press concatenate button",
+            "match": {
+              "location": "DemoWebAppFunctionalTestSteps.i_press_concatenate_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28040180,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the result should be \"222333\" on the third text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "222333",
+                  "offset": 22
+                }
+              ],
+              "location": "DemoWebAppFunctionalTestSteps.the_result_should_be_something_on_the_third_text_box(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@FUNCTIONAL"
+          },
+          {
+            "line": 7,
+            "name": "@REGRESSION"
+          },
+          {
+            "line": 7,
+            "name": "@STAGE"
+          }
+        ]
+      }
+    ],
+    "name": "Validate the web site pages",
+    "description": "Navigate to the Test page.\r\nEnter the values in two text boxes. \r\nHit concatenate button to populate the result in the third textbox.\r\nValidate the result populated is as expected.",
+    "id": "validate-the-web-site-pages",
+    "keyword": "Feature",
+    "uri": "sample-webapp-functional-test.feature"
+  }
+]
