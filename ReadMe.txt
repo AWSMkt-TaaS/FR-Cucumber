@@ -1,8 +1,9 @@
-This is a Maven UI Functional/Regression Demo Test Project
+This is a Maven UI Functional/Regression Demo Test Project.
+
 It uses Cucumber to run automated acceptance tests written in a behavior-driven development (BDD) style with Gherkin language parser.
 Cucumber features and scenarios are scripted in the sample-webapp-functional-test.feature file.
 It uses "https://webapp.astadia-taas.com" Web Application end points for the testing and the end-point url has been configured in the file DemoWebAppFunctionalstSteps.java.
-Test Engineer can make changes  in the "sample-webapp-functional-test.feature" file 
+Test Engineer can make changes  in the "sample-webapp-functional-test.feature" file. 
 
 Test Engineer can run the test, right click on pom.xml and do:
 	- mvn clean
