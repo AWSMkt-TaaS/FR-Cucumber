@@ -1,4 +1,4 @@
-The Maven UI Functional/Regression Test Project is a simple behavior-driven testing example that provides a working integration of Cucumber, the TestNG framework, Selenium Webdriver, Maven and Git.   Everything is integrated for you so you can concentrate on developing automate acceptance tests without experiencing the hassle of local installation, configuration; or maintaining a test automation platform on your laptop.   
+The Maven UI Functional/Regression Test Project is a simple behavior-driven testing example that provides a working integration of Cucumber, the TestNG framework, Selenium Webdriver, Maven and Git.  Everything is integrated for you so you can concentrate on developing automate acceptance tests without experiencing the hassle of local installation, configuration; or maintaining a test automation platform on your laptop.   
 
 Using the Test Project
 The Test Project exercises a public page at "https://webapp.astadia-taas.com" using Cucumber.  
@@ -12,7 +12,7 @@ https://cloudgps.astadia.com/apphub-aws-mp-tee-user-guide
 
 If you want to jump right in and run tests and view reports follow along below:
 
-Option1: From the Eclipse IDE:
+Option 1: From the Eclipse IDE:
 Click on Eclipse Neon icon and select the demo project “/home/centos/workspace-demo/” (default)  
 
 In the package explorer of the Eclipse IDE:
@@ -22,7 +22,7 @@ In the package explorer of the Eclipse IDE:
 -	Click on “index.html” in the Package Explored to the view report.
 
 
-Option2 : From the Command Line :
+Option 2 : From the Command Line :
 From KDE, select “Start” icon, enter “Konsole” into the input box and then click on the “Konsole” icon. 
 
 In the Konsole Window, type the command:
