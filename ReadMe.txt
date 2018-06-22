@@ -1,30 +1,44 @@
-This is a Maven UI Functional/Regression Demo Test Project.  It uses Cucumber to run automated acceptance tests written in a behavior-driven development (BDD) style with Gherkin language parser.  
+The Maven UI Functional/Regression Test Project is a simple behavior-driven testing example that provides a working integration of Cucumber, the TestNG framework, Selenium Webdriver, Maven and Git.   Everything is integrated for you so you can concentrate on developing automate acceptance tests without experiencing the hassle of local installation, configuration; or maintaining a test automation platform on your laptop.   
 
-Cucumber features and scenarios are scripted in the sample-webapp-functional-test.feature file.
+Using the Test Project
+The Test Project exercises a public page at "https://webapp.astadia-taas.com" using Cucumber.  
+Cucumber reduces the effort to keep requirement specifications, tests and documentation in sync and it's
+compatible with all the major software platforms.  This project uses a Java implementation for it's executable specification.
 
-It uses "https://webapp.astadia-taas.com" Web Application end points for the testing and the end-point url has been configured in the file DemoWebAppFunctionalstSteps.java.
+If you want to learn more about cucumber refer to https://cucumber.io/ or https://github.com/cucumber
 
-Test Engineer can make changes  in the "sample-webapp-functional-test.feature" file. 
+If you want to view usage instructions with pictures then jump to the following link:
+https://cloudgps.astadia.com/apphub-aws-mp-tee-user-guide
 
-Test Engineer can run the test, right click on pom.xml and do:
-	- mvn clean
-	  and then do
-	- mvn test
-	
-	- The test result will be available in the following location: 
-	  target/cucumber-report/html/demo-webapp-functional-test-reports/index.html
-	  
-Test Engineer can also run the maven test using CLI commands:
-	- go to the directory contains the pom.xml  file and run the following commands
-	- mvn clean test
-	OR
-	- mvn clean test -Dcucumber.options="--tags @FUNCTIONAL --tags @REGRESSION"  
-	  (This will run all the tests that tagged with @FUNCTIONAL and @REGRESSION)
-	  
-	- The test result will be available in the following location: 
-	  target/cucumber-report/html/demo-webapp-functional-test-reports/index.html
-	  
-The latest version of this demo test project can be cloned from the github location: https://github.com/AWSMkt-TaaS/FR-Cucumber
+If you want to jump right in and run tests and view reports follow along below:
 
-	  
-	  
+Option1: From the Eclipse IDE:
+Click on Eclipse Neon icon and select the demo project “/home/centos/workspace-demo/” (default)  
+
+In the package explorer of the Eclipse IDE:
+-	Expand the project “FR-Cucumber, right click on pom.xml and follow the steps below:
+-	Click “3 Maven clean” 
+-	On “Build success” Click “6 Maven test”
+-	Click on “index.html” in the Package Explored to the view report.
+
+
+Option2 : From the Command Line :
+From KDE, select “Start” icon, enter “Konsole” into the input box and then click on the “Konsole” icon. 
+
+In the Konsole Window, type the command:
+cd /home/centos/workspace-demo/FR-Cucumber/
+Ensure the current directory is “FR-Cucumber” by using following command:
+ls
+ 
+Run one of the following commands:
+   mvn clean test
+OR
+   mvn clean test -Dcucumber.options="--tags @FUNCTIONAL --tags @REGRESSION"  
+  (This will run all the tests that tagged with @FUNCTIONAL and @REGRESSION)
+  
+Using one of the browsers provided with the TEE, access the test report at:   
+file:///home/centos/workspace-demo/FR-Cucumber/target/cucumber-report/html/demo-webapp-functional-test-reports/index.html
+
+Cloning the Latest 
+The latest version of this demo test project can be cloned from github at:
+https://github.com/AWSMkt-TaaS/FR-Cucumber.
