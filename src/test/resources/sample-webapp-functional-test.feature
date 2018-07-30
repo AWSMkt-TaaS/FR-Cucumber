@@ -7,9 +7,9 @@ Feature: Validate the web site pages
   @FUNCTIONAL @REGRESSION @STAGE
   Scenario: Concatenate two numbers in home apge and navigate to about page
     Given I am using app url to navigate to the Test page
-    And I have entered "222" into the first text box
-    And Then I have entered "333" into the second text box
+    And I have entered "abc" into the first text box
+    And Then I have entered "def" into the second text box
     When I press concatenate button
-    Then the result should be "222333" on the third text box
+    Then the result should be "abcdef" on the third text box
     
    
