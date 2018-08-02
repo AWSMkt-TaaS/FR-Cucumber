@@ -76,35 +76,32 @@ public class AppTestManager {
 	public void navigateToTargetPage(String url)
 	{
 		 System.out.println("navigateToTargetPage-in");
-	    //driver.navigate().to(url);
+	    
 		 Actions x = new Actions(driver);
 		 try{
-		 x.build().wait(10);
+			 x.build().wait(10);
 		 }
 		 catch(Exception ex){
-			 String sss=""; 
+			 //swallow this exception
+			 String tmp=""; 
 		 }
 	    driver.get(url);
-	   
-		
-	    String sss="";
 	    
-	    sss="sd";
 	    System.out.println("navigateToTargetPage-out");
 	    //this.sleep(1000);
 	}
 	
 	
 
-	public void enterFirstTextBox(int ip1)
+	public void enterFirstTextBox(String ip1)
 	{
 	    WebElement ele1 = driver.findElement(By.id("a"));
-	    ele1.sendKeys(Integer.toString(ip1));
+	    ele1.sendKeys(ip1);
 	}
-	public void enterSecondTextBox(int ip2)
+	public void enterSecondTextBox(String ip2)
 	{
 	    WebElement ele1 = driver.findElement(By.id("b"));
-	    ele1.sendKeys(Integer.toString(ip2));
+	    ele1.sendKeys(ip2);
 	}
 	public void clickConcatenateButton()
 	{
@@ -114,7 +111,7 @@ public class AppTestManager {
 			actions.click(ele3).perform();
 	}
 	
-	public void validateThirdTextBox(int ip3)
+	public void validateThirdTextBox(String ip3)
 	{
 	    try
 	    {
@@ -130,55 +127,10 @@ public class AppTestManager {
 	        output = "Unexpected Error: " + ex.getMessage();
 	    }
 
-	    strtrace = "Expected output=" + Integer.toString(ip3) + "; Generated output=" + output;
+	    strtrace = "Expected output=" + ip3 + "; Generated output=" + output;
 	  
 	}
-
 	
-
-
-	
-
-
-	//PAGE 333333333333333333333333333333333
-
-
-	public void enterFirstTextBoxContact(int ip1)
-	{
-	    WebElement ele1 = driver.findElement(By.id("a1"));
-	    ele1.sendKeys(Integer.toString(ip1));
-	}
-	public void enterSecondTextBoxContact(int ip2)
-	{
-	    WebElement ele1 = driver.findElement(By.id("b1"));
-	    ele1.sendKeys(Integer.toString(ip2));
-	}
-	public void clickConcatenateButtonContact()
-	{
-	    WebElement ele3 = driver.findElement(By.id("c1"));
-	    Actions actions = new Actions(driver);
- 		actions.click(ele3).perform();
-	}
-
-	public void validateThirdTextBoxContact(int ip3)
-	{
-	    try
-	    {
-	        WebElement ele4 = driver.findElement(By.id("d1"));
-	        output = ele4.getAttribute("value");
-	        if (Strings.isNullOrEmpty(output))
-	        {
-	            output = "No value found";
-	        }
-	    }
-	    catch (Exception ex)
-	    {
-	        output = " Uexpected Error: " + ex.getMessage();
-	    }
-
-	    strtrace = "Expected output=" + Integer.toString(ip3) + "; Generated output=" + output;
-
-	}
 
 
 	public void closeTest()
