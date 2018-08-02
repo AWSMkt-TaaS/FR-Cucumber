@@ -19,7 +19,7 @@ In the package explorer of the Eclipse IDE:
 -	Expand the project “FR-Cucumber, right click on pom.xml and follow the steps below:
 -	Click “3 Maven clean” 
 -	On “Build success” Click “6 Maven test”
--	Click on “index.html” in the Package Explored to the view report.
+-	Double-click on the “index.html” file located in "target/cucumber-report/html/demo-webapp-functional-test-reports" to view Cucumber report.
 
 
 Option 2 : From the Command Line :
