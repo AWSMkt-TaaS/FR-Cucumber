@@ -5,7 +5,7 @@ Feature: Validate the web site pages
   Validate the result populated is as expected.
 
   @FUNCTIONAL @REGRESSION @STAGE
-  Scenario: Concatenate two numbers in home apge and navigate to about page
+  Scenario: Concatenate two numbers in the Test page
     Given I am using app url to navigate to the Test page
     And I have entered "abc" into the first text box
     And Then I have entered "def" into the second text box
